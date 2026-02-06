@@ -204,7 +204,7 @@ done
 shift $((OPTIND-1))
 
 if ! command -v "${PODMAN}" >/dev/null 2>&1; then
-  echo "ERROR: '${PODMAN}' not found. Pass -d to specify a different container CLI"
+  echo "ERROR: ${PODMAN} not found; use '-d' to specify a container front-end"
   exit 1
 fi
 
