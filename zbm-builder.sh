@@ -38,8 +38,9 @@ OPTIONS:
      Specify the path to a configuration file that will be sourced
      (Default: \${BUILD_DIRECTORY}/zbm-builder.conf, if it exists)
 
-  -d <executable>
-     Force the use of a container CLI other than podman or docker
+  -d <container-frontend>
+     Use the specified front-end utility to launch the build container
+     (Default: podman if available, docker otherwise)
 
   -M <argument>
      Provide a comma-separated list of options to use for volume
